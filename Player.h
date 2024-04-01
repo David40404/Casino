@@ -40,7 +40,7 @@ public:
 	}
 
 	void loadBalance() {
-		ifstream bFile("textures/balance.txt", std::ios::binary);
+		ifstream bFile("Saves/balance.txt", std::ios::binary);
 
 		bFile.read((char*)(&balance), sizeof(balance));
 
@@ -48,7 +48,7 @@ public:
 	}
 
 	void saveBalance() {
-		ofstream bFile("textures/balance.txt", std::ios::binary);
+		ofstream bFile("Saves/balance.txt", std::ios::binary);
 
 		bFile.write((char*)(&balance), sizeof(balance));
 
